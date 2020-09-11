@@ -24,9 +24,9 @@ class App(QWidget):
         button.move(50,70)
         button.clicked.connect(self.on_click)
 
-        button1 = QPushButton('push', self)
-        button1.move(150,70)
-        button1.clicked.connect(self.on_click_2)
+        #button1 = QPushButton('push', self)
+        #button1.move(150,70)
+        #button1.clicked.connect(self.on_click_2)
         
         self.show()
 
@@ -34,8 +34,8 @@ class App(QWidget):
     def on_click(self):
         print('PyQt5 button pressed')
 
-    def on_click_2(self):
-        print('PyQT5 button pushed')
+    #def on_click_2(self):
+       # print('PyQT5 button pushed')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
